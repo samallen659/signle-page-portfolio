@@ -3,6 +3,12 @@ module.exports = {
 	content: ["./public/**/*.{html,js}"],
 	theme: {
 		extend: {},
+		container: {
+			center: true,
+			sm: "1rem",
+			md: "2.5rem",
+			lg: "10rem",
+		},
 		colors: {
 			purple: "#755CDE",
 			orange: "#F6A560",
@@ -33,5 +39,5 @@ module.exports = {
 			},
 		],
 	},
-	plugins: [require("daisyui")],
+	plugins: [require("daisyui"), require("tailwindcss-debug-screens")],
 };
