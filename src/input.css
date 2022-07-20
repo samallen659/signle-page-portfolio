@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+	@apply md:w-56 md:h-14 rounded-full w-44 h-11;
+}
