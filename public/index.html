@@ -9,11 +9,50 @@
 
 		<title>Frontend Mentor | Single-page design portfolio</title>
 	</head>
-	<body class="debug-screens">
-		<div class="container bg-purple">
-			<button class="btn btn-secondary mx-auto block">Button</button>
-			<button class="btn btn-primary mx-auto block">Button</button>
-		</div>
+	<body class="debug-screens text-[14px]">
+		<header class="container">
+			<nav class="navbar flex justify-between">
+				<img src="./assets/logo.svg" alt="logo" class="w-12 h-12" />
+				<button class="btn btn-primary font-bold">Free Consultation</button>
+			</nav>
+			<section class="hero pt-4">
+				<div class="hero-content text-center">
+					<div class="max-w-3xl">
+						<h1 class="text-4xl font-bold text-black">Design solutions made easy</h1>
+						<p class="text-grey px-7 pt-4">
+							With over ten years of experience in various design disciplines, I'm your one-stop shop for your
+							design needs.
+						</p>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main>
+			<section class="grid gap-6 grid-rows-6 grid-cols-2 container md:grid-cols-4 md:grid-rows-3 xl:grid-cols-6 xl:grid-rows-2">
+				<article class="p-6 card bg-purple col-span-2 row-span-2 flex flex-col justify-between gap-24" id="graphic-design-card">
+					<img src="./assets/pattern-graphic-design.svg" alt="" class="w-32 self-end">
+					<h2 class="text-white text-2xl font-bold">Graphic Design</h2>
+				</article>
+				<article class="p-6 card bg-orange flex flex-col justify-between gap-10" id="ui-ux-card">
+					<img src="./assets/pattern-ui-ux.svg" alt="" class="h-16 self-end">
+					<h2 class="text-white text-2xl font-bold">UI/UX</h2>
+				</article>
+				</article>
+				<article class="p-6 card bg-pink flex flex-col justify-between gap-10" id="apps-card">
+					<img src="./assets/pattern-apps.svg" alt="" class="h-16 self-end">
+					<h2 class="text-white text-2xl font-bold">Apps</h2>
+				</article>
+				<article class="p-6 card bg-red col-span-2 flex flex-col justify-between gap-10 xl:col-start-3 xl:col-end-5" id="illustrations-card">					
+					<img src="./assets/pattern-illustrations.svg" alt="" class="h-16 self-end">
+					<h2 class="text-white text-2xl font-bold">Illustrations</h2></article>
+				<article class="p-6 card bg-cyan col-span-2 flex flex-col justify-between gap-10 xl:col-start-5 xl:col-end-7 xl:row-start-1" id="photography-card">					
+					<img src="./assets/pattern-photography.svg" alt="" class="h-16 self-end">
+					<h2 class="text-white text-2xl font-bold">Photography</h2></article>
+				<article class="p-6 card bg-maroon col-span-2 flex flex-col justify-between gap-10 xl:col-start-5 xl:col-end-7" id="motion-graphics-card">					
+					<img src="./assets/pattern-motion-graphics.svg" alt="" class="h-16 self-end">
+					<h2 class="text-white text-2xl font-bold">Motion Graphics</h2></article>
+			</section>
+		</main>
 		<!-- Free Consultation Design solutions made easy With over ten years of experience in various design disciplines, I’m your
 		one-stop shop for your design needs. Graphic Design UI/UX Apps Photography Illustrations Motion Graphics I’m Amy, and I’d
 		love to work on your next project I love working with others to create beautiful design solutions. I’ve designed

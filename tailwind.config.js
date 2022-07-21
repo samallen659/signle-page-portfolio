@@ -5,9 +5,12 @@ module.exports = {
 		extend: {},
 		container: {
 			center: true,
-			sm: "1rem",
-			md: "2.5rem",
-			lg: "10rem",
+			padding: {
+				DEFAULT: "1rem",
+				sm: "1rem",
+				md: "2.5rem",
+				lg: "10rem",
+			},
 		},
 		colors: {
 			purple: "#755CDE",
@@ -17,7 +20,7 @@ module.exports = {
 			cyan: "#61C4B7",
 			maroon: "#552049",
 			black: "#030303",
-			grey: "7A746E",
+			grey: "#7A746E",
 			white: "#FFF7F0",
 		},
 		fontFamily: {
