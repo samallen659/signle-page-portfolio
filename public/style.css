@@ -1371,6 +1371,31 @@ html{
   grid-row: span 2 / span 2;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.-ml-11{
+  margin-left: -2.75rem;
+}
+
+.ml-11{
+  margin-left: 2.75rem;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -1395,8 +1420,12 @@ html{
   width: 8rem;
 }
 
-.w-16{
-  width: 4rem;
+.w-\[280px\]{
+  width: 280px;
+}
+
+.w-\[300px\]{
+  width: 300px;
 }
 
 .max-w-3xl{
@@ -1413,6 +1442,10 @@ html{
 
 .flex-col{
   flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
 }
 
 .justify-between{
@@ -1435,11 +1468,6 @@ html{
   align-self: flex-end;
 }
 
-.bg-red{
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 117 101 / var(--tw-bg-opacity));
-}
-
 .bg-purple{
   --tw-bg-opacity: 1;
   background-color: rgb(117 92 222 / var(--tw-bg-opacity));
@@ -1453,6 +1481,11 @@ html{
 .bg-pink{
   --tw-bg-opacity: 1;
   background-color: rgb(243 158 158 / var(--tw-bg-opacity));
+}
+
+.bg-red{
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 117 101 / var(--tw-bg-opacity));
 }
 
 .bg-cyan{
@@ -1474,8 +1507,17 @@ html{
   padding-right: 1.75rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-center{
@@ -1494,6 +1536,11 @@ html{
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1527,8 +1574,41 @@ html{
     width: 14rem;
   }
 
-  .md\:grid{
-    display: grid;
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:ml-11{
+    margin-left: 2.75rem;
+  }
+
+  .md\:-ml-11{
+    margin-left: -2.75rem;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:w-\[364px\]{
+    width: 364px;
+  }
+
+  .md\:grow{
+    flex-grow: 1;
+  }
+
+  .md\:basis-0\.5{
+    flex-basis: 0.125rem;
+  }
+
+  .md\:basis-0{
+    flex-basis: 0px;
+  }
+
+  .md\:basis-1\/2{
+    flex-basis: 50%;
   }
 
   .md\:grid-cols-4{
@@ -1538,31 +1618,35 @@ html{
   .md\:grid-rows-3{
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:text-left{
+    text-align: left;
+  }
 }
 
 @media (min-width: 1280px){
-  .xl\:col-start-5{
-    grid-column-start: 5;
-  }
-
   .xl\:col-start-3{
     grid-column-start: 3;
   }
 
-  .xl\:col-end-7{
-    grid-column-end: 7;
+  .xl\:col-start-5{
+    grid-column-start: 5;
   }
 
   .xl\:col-end-5{
     grid-column-end: 5;
   }
 
-  .xl\:row-start-1{
-    grid-row-start: 1;
+  .xl\:col-end-7{
+    grid-column-end: 7;
   }
 
-  .xl\:grid{
-    display: grid;
+  .xl\:row-start-1{
+    grid-row-start: 1;
   }
 
   .xl\:grid-cols-6{
