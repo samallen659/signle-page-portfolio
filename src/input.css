@@ -5,5 +5,14 @@
 @tailwind utilities;
 
 .btn {
-	@apply md:w-56 md:h-14 rounded-full w-44 h-11;
+  @apply h-11 w-44 rounded-full md:h-14 md:w-56;
+}
+
+.swiper-slide {
+  @apply max-w-[270px] md:max-w-[540px];
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 0.5rem;
 }

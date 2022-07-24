@@ -1,108 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-		<link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-		<title>Frontend Mentor | Single-page design portfolio</title>
-	</head>
-	<body class="debug-screens text-[14px]">
-		<header class="container">
-			<nav class="navbar flex justify-between">
-				<img src="./assets/logo.svg" alt="logo" class="w-12 h-12" />
-				<button class="btn btn-primary font-bold">Free Consultation</button>
-			</nav>
-			<section class="hero pt-4">
-				<div class="hero-content text-center">
-					<div class="max-w-3xl">
-						<h1 class="text-4xl font-bold text-black">Design solutions made easy</h1>
-						<p class="text-grey px-7 pt-4">
-							With over ten years of experience in various design disciplines, I'm your one-stop shop for your
-							design needs.
-						</p>
-					</div>
-				</div>
-			</section>
-		</header>
-		<main>
-			<section class="grid gap-6 grid-rows-6 grid-cols-2 container md:grid-cols-4 md:grid-rows-3 xl:grid-cols-6 xl:grid-rows-2">
-				<article class="p-6 card bg-purple col-span-2 row-span-2 flex flex-col justify-between gap-24" id="graphic-design-card">
-					<img src="./assets/pattern-graphic-design.svg" alt="" class="w-32 self-end">
-					<h2 class="text-white text-2xl font-bold">Graphic Design</h2>
-				</article>
-				<article class="p-6 card bg-orange flex flex-col justify-between gap-10" id="ui-ux-card">
-					<img src="./assets/pattern-ui-ux.svg" alt="" class="h-16 self-end">
-					<h2 class="text-white text-2xl font-bold">UI/UX</h2>
-				</article>
-				</article>
-				<article class="p-6 card bg-pink flex flex-col justify-between gap-10" id="apps-card">
-					<img src="./assets/pattern-apps.svg" alt="" class="h-16 self-end">
-					<h2 class="text-white text-2xl font-bold">Apps</h2>
-				</article>
-				<article class="p-6 card bg-red col-span-2 flex flex-col justify-between gap-10 xl:col-start-3 xl:col-end-5" id="illustrations-card">					
-					<img src="./assets/pattern-illustrations.svg" alt="" class="h-16 self-end">
-					<h2 class="text-white text-2xl font-bold">Illustrations</h2></article>
-				<article class="p-6 card bg-cyan col-span-2 flex flex-col justify-between gap-10 xl:col-start-5 xl:col-end-7 xl:row-start-1" id="photography-card">					
-					<img src="./assets/pattern-photography.svg" alt="" class="h-16 self-end">
-					<h2 class="text-white text-2xl font-bold">Photography</h2></article>
-				<article class="p-6 card bg-maroon col-span-2 flex flex-col justify-between gap-10 xl:col-start-5 xl:col-end-7" id="motion-graphics-card">					
-					<img src="./assets/pattern-motion-graphics.svg" alt="" class="h-16 self-end">
-					<h2 class="text-white text-2xl font-bold">Motion Graphics</h2></article>
-			</section>
-			<section class="flex flex-col items-center mt-24 gap-10 lg:gap-32 md:flex-row xl:container">
-				<figure>
-					<img src="./assets/image-amy.webp" alt="" class="w-[300px] md:w-[364px] lg:w-[445px] md:basis-1/2 md:-ml-11 xl:m-0">
-				</figure>
-				<article class="md:basis-1/2 text-center md:text-left md:grow">
-					<h2 class="text-2xl font-bold px-4">I'm Amy, and I'd love to work on your next project</h2>
-					<p class="px-4 pt-6">I love working with others to creae beautiful design solutions. I've designed everything from brand illustrations to complete mobile apps. I'm also handy with a camera!</p>
-					<button class="btn btn-primary mx-auto block mt-6 md:mx-0">Free Consultation</button>
-				</article>
-			</section>
-			<section class="mt-24">
-				<div class="carousel p-4 space-x-4 rounded-box">
-					<div class="carousel-item w-[270px] h-[180px] md:w-[540px] md:h-[360px]" id="slide1">
-						<img src="./assets/image-slide-1.jpg" alt="">
-					</div>
-					<div class="carousel-item w-[270px] h-[180px] md:w-[540px] md:h-[360px]" id="slide2">
-						<img src="./assets/image-slide-2.jpg" alt="">
-					</div>
-					<div class="carousel-item w-[270px] h-[180px] md:w-[540px] md:h-[360px]" id="slide3">
-						<img src="./assets/image-slide-3.jpg" alt="">
-					</div>
-					<div class="carousel-item w-[270px] h-[180px] md:w-[540px] md:h-[360px]" id="slide4">
-						<img src="./assets/image-slide-4.jpg" alt="">
-					</div>
-					<div class="carousel-item w-[270px] h-[180px] md:w-[540px] md:h-[360px]" id="slide5">
-						<img src="./assets/image-slide-5.jpg" alt="">
-					</div>
-				</div>
-				<div>
-					<button class="btn btn-primary"><a href="#slide5">test</a></button>
-				</div>
-			</section>
-			<footer class="container mt-24">
-				<section class="card bg-primary flex flex-col text-white px-6 pb-6 pt-12 text-center md:px-[75px] md:pb-16 md:pt-14 xl:flex-row xl:gap-44 xl:items-center xl:text-left">
-					<div>
-						<h2 class="text-2xl font-bold pb-6">Book a call with me</h2>
-						<p class="pb-6">I'd lvoe to have a chat to see how I can help you. The best first step is for su to discuss your project during a free consultation. Then we can move forward from there.</p>
-					</div>
-					<button class="btn btn-secondary mx-auto block">Free Consultation</button>
-				</section>	
-				<nav class="navbar flex justify-between my-9">
-					<img src="./assets/logo.svg" alt="logo" class="w-12 h-12" />
-					<button class="btn btn-primary font-bold">Free Consultation</button>
-				</nav>
-			</footer>
-		</main>
-		<!-- Free Consultation Design solutions made easy With over ten years of experience in various design disciplines, I’m your
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
+  <body class="debug-screens text-[14px]">
+    <header class="container">
+      <nav class="navbar flex justify-between">
+        <img src="./assets/logo.svg" alt="logo" class="h-12 w-12" />
+        <button class="btn btn-primary font-bold">Free Consultation</button>
+      </nav>
+      <section class="hero pt-4">
+        <div class="hero-content text-center">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl font-bold text-black">
+              Design solutions made easy
+            </h1>
+            <p class="px-7 pt-4 text-grey">
+              With over ten years of experience in various design disciplines,
+              I'm your one-stop shop for your design needs.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section
+        class="container grid grid-cols-2 grid-rows-6 gap-6 md:grid-cols-4 md:grid-rows-3 xl:grid-cols-6 xl:grid-rows-2"
+      >
+        <article
+          class="card col-span-2 row-span-2 flex flex-col justify-between gap-24 bg-purple p-6"
+          id="graphic-design-card"
+        >
+          <img
+            src="./assets/pattern-graphic-design.svg"
+            alt=""
+            class="w-32 self-end"
+          />
+          <h2 class="text-2xl font-bold text-white">Graphic Design</h2>
+        </article>
+        <article
+          class="card flex flex-col justify-between gap-10 bg-orange p-6"
+          id="ui-ux-card"
+        >
+          <img src="./assets/pattern-ui-ux.svg" alt="" class="h-16 self-end" />
+          <h2 class="text-2xl font-bold text-white">UI/UX</h2>
+        </article>
+        <article
+          class="card flex flex-col justify-between gap-10 bg-pink p-6"
+          id="apps-card"
+        >
+          <img src="./assets/pattern-apps.svg" alt="" class="h-16 self-end" />
+          <h2 class="text-2xl font-bold text-white">Apps</h2>
+        </article>
+        <article
+          class="card col-span-2 flex flex-col justify-between gap-10 bg-red p-6 xl:col-start-3 xl:col-end-5"
+          id="illustrations-card"
+        >
+          <img
+            src="./assets/pattern-illustrations.svg"
+            alt=""
+            class="h-16 self-end"
+          />
+          <h2 class="text-2xl font-bold text-white">Illustrations</h2>
+        </article>
+        <article
+          class="card col-span-2 flex flex-col justify-between gap-10 bg-cyan p-6 xl:col-start-5 xl:col-end-7 xl:row-start-1"
+          id="photography-card"
+        >
+          <img
+            src="./assets/pattern-photography.svg"
+            alt=""
+            class="h-16 self-end"
+          />
+          <h2 class="text-2xl font-bold text-white">Photography</h2>
+        </article>
+        <article
+          class="card col-span-2 flex flex-col justify-between gap-10 bg-maroon p-6 xl:col-start-5 xl:col-end-7"
+          id="motion-graphics-card"
+        >
+          <img
+            src="./assets/pattern-motion-graphics.svg"
+            alt=""
+            class="h-16 self-end"
+          />
+          <h2 class="text-2xl font-bold text-white">Motion Graphics</h2>
+        </article>
+      </section>
+      <section
+        class="mt-24 flex flex-col items-center gap-10 md:flex-row lg:gap-32 xl:container"
+      >
+        <figure>
+          <img
+            src="./assets/image-amy.webp"
+            alt=""
+            class="w-[300px] md:-ml-11 md:w-[364px] md:basis-1/2 lg:w-[445px] xl:m-0"
+          />
+        </figure>
+        <article class="text-center md:grow md:basis-1/2 md:text-left">
+          <h2 class="px-4 text-2xl font-bold">
+            I'm Amy, and I'd love to work on your next project
+          </h2>
+          <p class="px-4 pt-6">
+            I love working with others to creae beautiful design solutions. I've
+            designed everything from brand illustrations to complete mobile
+            apps. I'm also handy with a camera!
+          </p>
+          <button class="btn btn-primary mx-auto mt-6 block md:mx-0">
+            Free Consultation
+          </button>
+        </article>
+      </section>
+      <section class="mx-auto mt-24 max-w-[2048px]">
+        <div class="swiper w-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image-slide-5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mt-14 flex justify-center gap-4">
+            <button
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-black text-white hover:bg-purple"
+              id="prev"
+            >
+              <img src="./assets/icon-arrow-left.svg" alt="" />
+            </button>
+            <button
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-black text-white hover:bg-purple"
+              id="next"
+            >
+              <img src="./assets/icon-arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer class="container mt-24">
+        <section
+          class="card flex flex-col bg-primary px-6 pb-6 pt-12 text-center text-white md:px-[75px] md:pb-16 md:pt-14 xl:flex-row xl:items-center xl:gap-44 xl:text-left"
+        >
+          <div>
+            <h2 class="pb-6 text-2xl font-bold">Book a call with me</h2>
+            <p class="pb-6">
+              I'd lvoe to have a chat to see how I can help you. The best first
+              step is for su to discuss your project during a free consultation.
+              Then we can move forward from there.
+            </p>
+          </div>
+          <button class="btn btn-secondary mx-auto block">
+            Free Consultation
+          </button>
+        </section>
+        <nav class="navbar my-9 flex justify-between">
+          <img src="./assets/logo.svg" alt="logo" class="h-12 w-12" />
+          <button class="btn btn-primary font-bold">Free Consultation</button>
+        </nav>
+      </footer>
+    </main>
+    <!-- Free Consultation Design solutions made easy With over ten years of experience in various design disciplines, I’m your
 		one-stop shop for your design needs. Graphic Design UI/UX Apps Photography Illustrations Motion Graphics I’m Amy, and I’d
 		love to work on your next project I love working with others to create beautiful design solutions. I’ve designed
 		everything from brand illustrations to complete mobile apps. I’m also handy with a camera! Free Consultation My Work Book
 		a call with me I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project
 		during a free consultation. Then we can move forward from there. Free Consultation Free Consultation -->
-	</body>
+  </body>
 </html>
