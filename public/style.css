@@ -1738,8 +1738,51 @@ html{
     padding-top: 3.5rem;
   }
 
+  .md\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .md\:pt-16{
+    padding-top: 4rem;
+  }
+
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-\[30px\]{
+    font-size: 30px;
+  }
+
+  .md\:text-\[32px\]{
+    font-size: 32px;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-\[44px\]{
+    font-size: 44px;
+  }
+
+  .md\:font-bold{
+    font-weight: 700;
+  }
+
+  .md\:leading-\[50px\]{
+    line-height: 50px;
   }
 }
 
@@ -1844,5 +1887,18 @@ html{
 
   .xl\:text-left{
     text-align: left;
+  }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-\[40px\]{
+    font-size: 40px;
+  }
+
+  .xl\:text-\[56px\]{
+    font-size: 56px;
   }
 }
