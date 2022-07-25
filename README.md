@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://jade-begonia-f6f8d9.netlify.app)
+- [Live Site URL](https://jade-begonia-f6f8d9.netlify.app)
 
 ## My process
 
