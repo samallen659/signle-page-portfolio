@@ -17,3 +17,6 @@
 
 #Modules
 /node_modules
+
+#build directory
+_site

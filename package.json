@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "watch": "tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "start": "npx @11ty/eleventy --serve & tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "build": "npx @11ty/eleventy --serve & tailwindcss -i ./src/input.css -o ./_site/style.css --minify"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
     "daisyui": "^2.19.0",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.12",
